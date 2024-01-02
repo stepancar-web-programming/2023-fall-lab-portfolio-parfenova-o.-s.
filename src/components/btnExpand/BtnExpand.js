@@ -37,7 +37,7 @@ const BtnExpand = (props) => {
     );
 
     setComponentVisibility((isComponentVisible) =>
-      isComponentVisible === true ? false : true
+      !isComponentVisible
     );
     setProgress(0);
     animateProgress();
