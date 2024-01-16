@@ -15,9 +15,10 @@ const ProjectPage = () => {
           <h1 className="title-1">{project.title}</h1>
           {project.imgBig && (
             <img
-              src={project.imgBig}
+              src={project.img}
               alt={project.title}
               className="project-details__cover"
+              srcset={project.imgBig}
             />
           )}
 
