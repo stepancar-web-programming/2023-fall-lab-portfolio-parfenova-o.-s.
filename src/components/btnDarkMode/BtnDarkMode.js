@@ -22,12 +22,20 @@ const BtnDarkMode = () => {
   }, [darkMode]);
 
   useEffect(() => {
+    const handleColorSchemeChange = (event) => {
+      const newColorScheme = event.matches ? "dark" : "light";
+      setDarkMode(newColorScheme);
+    };
+
     window
       .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (event) => {
-        const newColorScheme = event.matches ? "dark" : "light";
-        setDarkMode(newColorScheme);
-      });
+      .addEventListener("change", handleColorSchemeChange);
+
+    return () => {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .removeEventListener("change", handleColorSchemeChange);
+    };
   }, [setDarkMode]);
 
   const toggleDarkMode = () => {
