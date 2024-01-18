@@ -31,7 +31,6 @@ const BtnDarkMode = () => {
   }, [setDarkMode]);
 
   const toggleDarkMode = () => {
-    console.log("toggle dark mode");
     setDarkMode((currentValue) => {
       return currentValue === "light" ? "dark" : "light";
     });
