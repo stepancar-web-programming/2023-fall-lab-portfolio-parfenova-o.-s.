@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
 import "./style.css";
+import classNames from "classnames";
 
 const Navbar = () => {
-  const activeLink = "nav-list__link nav-list__link--active";
-  const normalLink = "nav-list__link";
+  const linkClass = ({ isActive }) => classNames("nav-list__link", {"nav-list__link--active": isActive});
 
   return (
     <nav className="nav">
@@ -21,9 +21,7 @@ const Navbar = () => {
             <li className="nav-list__item">
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
+                className={linkClass}
               >
                 Home
               </NavLink>
@@ -31,9 +29,7 @@ const Navbar = () => {
             <li className="nav-list__item">
               <NavLink
                 to="/projects"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
+                className={linkClass}
               >
                 Projects
               </NavLink>
@@ -41,9 +37,7 @@ const Navbar = () => {
             <li className="nav-list__item">
               <NavLink
                 to="/contacts"
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
+                className={linkClass}
               >
                 Contacts
               </NavLink>
