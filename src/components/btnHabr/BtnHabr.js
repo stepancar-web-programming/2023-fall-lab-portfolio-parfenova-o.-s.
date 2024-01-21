@@ -9,7 +9,7 @@ const BtnHabr = ({ link }) => {
       rel="noreferrer"
       className="btn-outline"
     >
-      <img src={habrIcon} alt="" />
+      <img src={habrIcon} alt="habr icon" />
       Habr link
     </a>
   )

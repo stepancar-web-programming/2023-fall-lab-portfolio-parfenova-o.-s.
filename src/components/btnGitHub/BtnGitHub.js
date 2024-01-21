@@ -1,4 +1,3 @@
-import "./style.css"
 import gitHubIcon from "./gitHub-black.svg"
 import PropTypes from "prop-types"
 
