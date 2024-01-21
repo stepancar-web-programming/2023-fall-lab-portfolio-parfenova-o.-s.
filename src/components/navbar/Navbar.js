@@ -15,8 +15,6 @@ const Navbar = () => {
             <strong>Hello!</strong>
           </NavLink>
 
-          <BtnDarkMode />
-
           <ul className="nav-list">
             <li className="nav-list__item">
               <NavLink
@@ -41,6 +39,9 @@ const Navbar = () => {
               >
                 Contacts
               </NavLink>
+            </li>
+            <li className="nav-list__item">
+              <BtnDarkMode className="nav-list__item"/>
             </li>
           </ul>
         </div>
