@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.css"
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
           <strong>
             My name is <em>Olga</em>
           </strong>
-          <br />I'm a beginning data scientist
+          <br />I&apos;m a beginning data scientist
         </h1>
         <div className="header__text"></div>
         <a href="comming soon.." className="btn">
@@ -16,7 +16,7 @@ const Header = () => {
         </a>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

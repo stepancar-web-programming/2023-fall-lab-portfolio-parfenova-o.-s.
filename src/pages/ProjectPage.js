@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom"
 
-import BtnGitHub from "../components/btnGitHub/BtnGitHub";
-import BtnHabr from "../components/btnHabr/BtnHabr";
-import { projects } from "../helpers/projectsList";
+import BtnGitHub from "../components/btnGitHub/BtnGitHub"
+import BtnHabr from "../components/btnHabr/BtnHabr"
+import { projects } from "../helpers/projectsList"
 
 const ProjectPage = () => {
-  const { id } = useParams();
-  const project = projects[id];
+  const { id } = useParams()
+  const project = projects[id]
 
   return (
     <main className="section">
@@ -18,7 +18,7 @@ const ProjectPage = () => {
               src={project.img}
               alt={project.title}
               className="project-details__cover"
-              srcset={project.imgBig}
+              srcSet={project.imgBig}
             />
           )}
 
@@ -29,7 +29,7 @@ const ProjectPage = () => {
                 height="473"
                 src={`https://www.youtube.com/embed/${project.videoId}`}
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
@@ -45,7 +45,7 @@ const ProjectPage = () => {
         </div>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default ProjectPage;
+export default ProjectPage

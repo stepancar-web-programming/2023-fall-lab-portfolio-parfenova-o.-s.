@@ -1,43 +1,37 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
-    es2021: true,
+    es2021: true
   },
   extends: [
-    "airbnb",
-    "plugin:eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
+    "standard",
+    "plugin:react/recommended"
   ],
   overrides: [
     {
       env: {
-        node: true,
+        node: true
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: [
+        ".eslintrc.{js,cjs}"
+      ],
       parserOptions: {
-        sourceType: "script",
-      },
-    },
+        sourceType: "script"
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: "latest",
+    sourceType: "module"
   },
+  plugins: [
+    "react"
+  ],
   rules: {
-    "react/react-in-jsx-scope": "off",
-    "react/no-array-index-key": "on",
-    "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "all",
-          "tabWidth": 12,
-          "semi": false,
-          "singleQuote": true,
-          "bracketSpacing": true,
-          "eslintIntegration": true,
-          "printWidth": 120
-        }
-      ]
-  },
-};
+    eqeqeq: "off",
+    curly: "error",
+    quotes: ["error", "double"],
+    "react/no-array-index-key": "warn",
+    "react/react-in-jsx-scope": "off"
+  }
+}

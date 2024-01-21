@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 
-import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
-import "./style.css";
-import classNames from "classnames";
+import BtnDarkMode from "../btnDarkMode/BtnDarkMode"
+import "./style.css"
+import classNames from "classnames"
 
 const Navbar = () => {
-  const linkClass = ({ isActive }) => classNames("nav-list__link", {"nav-list__link--active": isActive});
+  const linkClass = ({ isActive }) => classNames("nav-list__link", { "nav-list__link--active": isActive })
 
   return (
     <nav className="nav">
@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -1,6 +1,6 @@
-import BtnExpand from "../components/btnExpand/BtnExpand";
-import { skillsList } from "../helpers/skillsList";
-import Header from "./../components/header/Header";
+import BtnExpand from "../components/btnExpand/BtnExpand"
+import { skillsList } from "../helpers/skillsList"
+import Header from "./../components/header/Header"
 
 const Home = () => {
   return (
@@ -10,21 +10,21 @@ const Home = () => {
       <main className="section">
         <div className="container">
           <ul className="content-list">
-            {skillsList.map((skill, index) => {
+            {skillsList.map((skill) => {
               return (
                 <BtnExpand
-                  key={index}
+                  key={skill.id}
                   title={skill.title}
                   skills={skill.skills}
                   learnt={skill.learnt}
                 />
-              );
+              )
             })}
           </ul>
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

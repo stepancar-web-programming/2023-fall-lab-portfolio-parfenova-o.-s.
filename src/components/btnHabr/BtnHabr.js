@@ -1,9 +1,10 @@
-import habrIcon from "./habr-icon-black.svg";
+import habrIcon from "./habr-icon-black.svg"
+import PropTypes from "prop-types"
 
-const BtnHabr = (props) => {
+const BtnHabr = ({ link }) => {
   return (
     <a
-      href={props.link}
+      href={link}
       target="_blank"
       rel="noreferrer"
       className="btn-outline"
@@ -11,7 +12,11 @@ const BtnHabr = (props) => {
       <img src={habrIcon} alt="" />
       Habr link
     </a>
-  );
-};
+  )
+}
 
-export default BtnHabr;
+BtnHabr.propTypes = {
+  link: PropTypes.string.isRequired
+}
+
+export default BtnHabr

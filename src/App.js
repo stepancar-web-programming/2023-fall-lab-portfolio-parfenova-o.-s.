@@ -1,17 +1,17 @@
-import "./styles/main.css";
+import "./styles/main.css"
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Contacts from "./pages/Contacts";
-import ProjectPage from "./pages/ProjectPage";
+import Navbar from "./components/navbar/Navbar"
+import Footer from "./components/footer/Footer"
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
+import Contacts from "./pages/Contacts"
+import ProjectPage from "./pages/ProjectPage"
 
-import ScrollToTop from "./utils/scrollToTop";
+import ScrollToTop from "./utils/scrollToTop"
 
-function App() {
+function App () {
   return (
     <div className="App">
       <Router>
@@ -26,7 +26,7 @@ function App() {
         <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

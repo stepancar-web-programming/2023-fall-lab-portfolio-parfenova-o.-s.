@@ -1,9 +1,9 @@
-import vk from "./../../img/icons/vk.svg";
-import telegram from "./../../img/icons/telegram.svg";
-import habr from "./../../img/icons/habr.svg";
-import gitHub from "./../../img/icons/gitHub.svg";
+import vk from "./../../img/icons/vk.svg"
+import telegram from "./../../img/icons/telegram.svg"
+import habr from "./../../img/icons/habr.svg"
+import gitHub from "./../../img/icons/gitHub.svg"
 
-import "./style.css";
+import "./style.css"
 
 const Footer = () => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

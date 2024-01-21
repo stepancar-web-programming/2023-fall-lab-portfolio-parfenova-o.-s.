@@ -1,5 +1,5 @@
-import Project from "../components/project/Project";
-import { projects } from "../helpers/projectsList";
+import Project from "../components/project/Project"
+import { projects } from "../helpers/projectsList"
 
 const Projects = () => {
   return (
@@ -10,17 +10,17 @@ const Projects = () => {
           {projects.map((project, index) => {
             return (
               <Project
-                key={index}
+                key={project.id}
                 title={project.title}
                 img={project.img}
                 index={index}
               />
-            );
+            )
           })}
         </ul>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -24,7 +24,7 @@ const Contacts = () => {
         </ul>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Contacts;
+export default Contacts

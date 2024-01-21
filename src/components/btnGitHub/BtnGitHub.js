@@ -1,10 +1,11 @@
-import "./style.css";
-import gitHubIcon from "./gitHub-black.svg";
+import "./style.css"
+import gitHubIcon from "./gitHub-black.svg"
+import PropTypes from "prop-types"
 
-const BtnGitHub = (props) => {
+const BtnGitHub = ({ link }) => {
   return (
     <a
-      href={props.link}
+      href={link}
       target="_blank"
       rel="noreferrer"
       className="btn-outline"
@@ -12,7 +13,11 @@ const BtnGitHub = (props) => {
       <img src={gitHubIcon} alt="github icon" />
       GitHub repo
     </a>
-  );
-};
+  )
+}
 
-export default BtnGitHub;
+BtnGitHub.propTypes = {
+  link: PropTypes.string.isRequired
+}
+
+export default BtnGitHub
