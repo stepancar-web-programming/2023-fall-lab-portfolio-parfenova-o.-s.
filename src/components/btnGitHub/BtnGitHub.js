@@ -9,7 +9,7 @@ const BtnGitHub = (props) => {
       rel="noreferrer"
       className="btn-outline"
     >
-      <img src={gitHubIcon} alt="" />
+      <img src={gitHubIcon} alt="github icon" />
       GitHub repo
     </a>
   );
